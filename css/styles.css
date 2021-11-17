@@ -1,0 +1,492 @@
+html {
+    box-sizing:border-box;
+}
+
+*, *:before, *:after {
+    box-sizing:inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+@font-face {
+    font-family: 'EgyptienneR';
+    src: url(../_assets/EgyptienneURW-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'EgyptienneB';
+    src: url(../_assets/EgyptienneURW-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'EgyptienneBO';
+    src: url(../_assets/EgyptienneURW-BoldOblique.ttf);
+}
+
+@font-face {
+    font-family: 'EgyptienneRO';
+    src: url(../_assets/EgyptienneURW-RegularOblique.ttf);
+}
+
+@font-face {
+    font-family: 'EgyptienneM';
+    src: url(../_assets/EgyptienneURW-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'EgyptienneMO';
+    src: url(../_assets/EgyptienneURW-MediumOblique.ttf);
+}
+
+@font-face {
+    font-family: 'EgyptienneEL';
+    src: url(../_assets/EgyptienneURW-ExtraLight.ttf);
+}
+
+@font-face {
+    font-family: 'EgyptienneELO';
+    src: url(../_assets/EgyptienneURW-ExtraLightOblique.ttf);
+}
+
+@font-face {
+    font-family: 'EgyptienneL';
+    src: url(../_assets/EgyptienneURW-Light.ttf);
+}
+
+@font-face {
+    font-family: 'EgyptienneLO';
+    src: url(../_assets/EgyptienneURW-LightOblique.ttf);
+}
+
+body {
+    background-color:#F2F0D5;
+
+}
+
+h1 {
+  text-align: left;
+  color: #F21D2F;
+  font-weight: bold;
+  font-family:EgyptienneB;
+  font-size: 70px
+}
+
+hr {
+  border: none;
+    height: 7px;
+    color: #A3A68D;
+    background-color: #A3A68D;
+}
+
+
+.item1 { grid-area: intro;
+         font-family: EgyptienneR;
+         color: #260101;
+         font-size:20px;
+         text-align:left;
+ }
+
+.item2 { grid-area: letters;
+         font-weight:bold;
+         font-size:35px;
+         text-align:left;
+         font-family:EgyptienneRO;
+         color: #F21D2F;
+}
+
+.item3 { grid-area: symbols;
+         font-family:EgyptienneRO;
+         font-size:35px;
+         text-align:right;
+         color: #F21D2F;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'intro intro intro letters letters letters'
+    'intro intro intro symbols symbols symbols';
+
+  grid-gap: 10px;
+  background-color: #F2F0D5;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: #F2F0D5;
+  padding: 20px;
+  grid-template-rows: 1fr;
+}
+
+.grid-container2 {
+  display:grid;
+  grid-template-areas:
+  'display display display display '
+  'words words words words ' ;
+
+
+}
+
+.grid-container2 > div {
+  background-color: #A3A68D;
+  padding: 20px 0;
+  height: 325px;
+  width: 100%;
+  color: #F21D2F;
+}
+
+.item4 {grid-area: display;
+        font-family:EgyptienneRO;
+        align-content: center;
+        text-align: left;
+        font-size: 70px;
+}
+
+.item5 {grid-area: words;
+        font-family: EgyptienneRO;
+        color: black;
+        text-align:right;
+        font-size: 35px;
+}
+
+.grid-container3 {
+  display: grid;
+  grid-template-areas:
+    'lorem lorem lorem lorem lorem'
+    'lorem lorem lorem lorem lorem';
+
+
+  grid-gap: 10px;
+  background-color: #F2F0D5;
+  padding: 20px;
+}
+
+.grid-container3 > div {
+  background-color: #F2F0D5;
+  padding: 20px 0;
+  font-size: 20px;
+}
+
+.item6{grid-area: lorem;
+      font-family: EgyptienneR;
+      text-align:left;
+}
+
+grid-container4 {
+  display:grid;
+  grid-template-areas:
+  'ok1 ok1 ok1 ok1 ok1 ok1'
+  'ok2 ok2 ok2 ok2 ok2 ok2'
+  'ok3 ok3 ok3 ok3 ok3 ok3'
+  'ok5 ok5 ok5 ok5 ok5 ok5'
+  'ok6 ok6 ok6 ok6 ok6 ok6'
+  'ok7 ok7 ok7 ok7 ok7 ok7'
+  'ok8 ok8 ok8 ok8 ok8 ok8'
+  'ok9 ok9 ok9 ok9 ok9 ok9'
+  'ok10 ok10 ok10 ok10 ok10';
+
+
+}
+
+.grid-container4 > div {
+  padding: 20px;
+  font-size: 35px;
+  height: 50px;
+  color: #F21D2F;
+
+}
+
+.item7 {grid-area: Ok1;
+        font-family: EgyptienneEL;
+        text-align:left;
+}
+
+.item8 {grid-area:ok2;
+        font-family: EgyptienneELO;
+        text-align: center;
+}
+
+.item9 {grid-area:ok3;
+        font-family: EgyptienneL;
+        text-align:right;
+}
+
+.item11 {grid-area:ok5;
+         font-family: EgyptienneR;
+         text-align:center;
+}
+
+.item12{grid-area:ok6;
+        font-family: EgyptienneRO;
+        text-align:left;
+}
+
+.item13 {grid-area:ok7;
+         font-family: EgyptienneM;
+         text-align:center;
+}
+
+.item14 {grid-area:ok8;
+         font-family: EgyptienneMO;
+         text-align:right;
+}
+
+.item15{grid-area:ok9;
+        font-family: EgyptienneB;
+        text-align: center;
+}
+
+.item16 {grid-area:ok10;
+         font-family: EgyptienneBO;
+         text-align:left;
+}
+
+grid-container5 {
+  display:grid;
+  grid-template-areas:
+  'ok11 ok11 ok11 ok11 ok11'
+  'ok12 ok12 ok12 ok12 ok12'
+  'ok13 ok13 ok13 ok13 ok13'
+  'ok14 ok14 ok14 ok14 ok14';
+
+
+}
+
+.grid-container5 {
+  display: grid;
+  grid-template-areas:
+    'lorem2 lorem2 lorem2 lorem2 lorem2'
+    'lorem2 lorem2 lorem2 lorem2 lorem2';
+
+
+  grid-gap: 10px;
+  background-color: #F2F0D5;
+  padding: 20px;
+}
+
+.grid-container5 > div {
+  background-color: #F2F0D5;
+  padding: 20px 0;
+  font-size: 20px;
+}
+
+.item17{grid-area: lorem2;
+      font-family: EgyptienneR;
+      text-align:left;
+}
+
+.grid-container6 {
+  display:grid;
+  grid-template-areas:
+  'ok11 ok11 ok11 ok20 ok20 ok20'
+  'ok12 ok12 ok12 ok21 ok21 ok21'
+  'ok13 ok13 ok13 ok22 ok22 ok22'
+  'ok14 ok14 ok14 ok23 ok23 ok23'
+  'ok15 ok15 ok15 ok24 ok24 ok24'
+  'ok16 ok16 ok16 ok25 ok25 ok25'
+  'ok17 ok17 ok17 ok26 ok26 ok26'
+  'ok18 ok18 ok18 ok27 ok27 ok27'
+  'ok19 ok19 ok19 ok28 ok28 ok28';
+
+}
+
+.grid-container6 > div {
+  padding-left: 20px;
+  padding-bottom:100px;
+
+  height: 25px;
+  color: #F21D2F;
+}
+
+.item18{grid-area: ok11;
+        font-family: EgyptienneBO;
+        font-size: 10px;
+}
+
+.item19{grid-area: ok12;
+        font-family: EgyptienneBO;
+        font-size: 20px;
+
+}
+.item20{grid-area: ok13;
+        font-family: EgyptienneBO;
+        font-size: 30px;
+}
+.item21{grid-area: ok14;
+        font-family: EgyptienneBO;
+        font-size: 40px;
+}
+.item22{grid-area: ok15;
+        font-family: EgyptienneBO;
+        font-size: 50px;
+}
+
+.item23{grid-area: ok16;
+        font-family: EgyptienneBO;
+        font-size: 60px;
+}
+
+.item24{grid-area: ok17;
+        font-family: EgyptienneBO;
+        font-size: 70px;
+}
+
+.item25{grid-area: ok18;
+        font-family: EgyptienneBO;
+        font-size: 80px;
+}
+
+.item26{grid-area: ok19;
+        font-family: EgyptienneBO;
+        font-size: 90px;
+}
+
+
+
+
+
+.item27{grid-area: ok20;
+        font-family: EgyptienneMO;
+        font-size: 90px;
+}
+
+.item28{grid-area: ok21;
+        font-family: EgyptienneMO;
+        font-size: 80px;
+}
+.item29{grid-area: ok22;
+        font-family: EgyptienneMO;
+        font-size: 70px;
+}
+.item30{grid-area: ok23;
+        font-family: EgyptienneMO;
+        font-size: 60px;
+}
+.item31{grid-area: ok24;
+        font-family: EgyptienneMO;
+        font-size: 50px;
+}
+.item32{grid-area: ok25;
+        font-family: EgyptienneMO;
+        font-size: 40px;
+}
+.item33{grid-area: ok26;
+        font-family: EgyptienneMO;
+        font-size: 30px;
+}
+.item34{grid-area: ok27;
+        font-family: EgyptienneMO;
+        font-size: 20px;
+}
+.item35{grid-area: ok28;
+        font-family: EgyptienneMO;
+        font-size: 10px;
+}
+
+
+
+.grid-container7 {
+  display: grid;
+  grid-template-areas:
+    'letters2 letters2 letters2 intro2 intro2 intro2'
+    'symbols2 symbols2 symbols2 intro2 intro2 intro2';
+
+  grid-gap: 50px;
+  background-color: #A3A68D;
+
+}
+
+.grid-container7 > div {
+  background-color: #A3A68D;
+  padding: 20px
+  grid-template-rows: 1fr;
+}
+
+.item36 { grid-area: intro2;
+         font-family: EgyptienneR;
+         color: #260101;
+         font-size:20px;
+         text-align:left;
+ }
+
+.item37 { grid-area: letters2;
+         font-weight:bold;
+         font-size:35px;
+         text-align:left;
+         font-family:EgyptienneRO;
+         color: #F21D2F;
+}
+
+.item38 { grid-area: symbols2;
+         font-family:EgyptienneRO;
+         font-size:35px;
+         text-align:right;
+         color: #F21D2F;
+}
+
+#DIV1 {
+  height: 300px;
+  width: 300px;
+  margin: auto;
+  border: 1px #F21D1D;
+  font-family: EgyptienneB;
+}
+
+#DIV2 {
+  width: 150px;
+  height: 350px;
+  border: 1px
+  background-color: #F2F0D5;
+  -ms-transform: rotate(180deg);
+  transform: rotate(90deg);
+  animation: mymove 5s infinite;
+  color: #F2F0D5;
+  font-family: EgyptienneB;
+}
+
+@keyframes mymove {
+  50% {transform-origin: 0 0 0;}
+}
+
+#DIV2original {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border: 1px
+  background-color: #A3A68D;
+  font-family: EgyptienneB;
+
+}
+
+.column {
+  float: left;
+  width: 100%;
+  padding: 25px;
+  height:500px;
+  background-color:#A3A68D;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  background-color: #black;
+}
+
+@media (min-width: 3000px)  {
+
+    .container  {
+      position: absolute;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+
+    }
+
+    @media screen and (max-width: 200px) {
+      .column {
+        width: 100%;
+      }
+    }
